@@ -15,11 +15,13 @@ def show
 end
 
 def new 
-  @book = Book.new 
+  # Generating books from user
+  @book = current_user.books.build
 end
 
 def create 
-  @book = Book.new(book_params)
+  # This is used instead of Book.new
+  @book = current_user.books.build(book_params)
 
   if @book.save
     redirect_to root_path
