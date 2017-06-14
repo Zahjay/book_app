@@ -3,8 +3,31 @@
 <p><%=  @book.description %></p>
 
 <%= link_to "Back", root_path%>
-<%= link_to "Edit", edit_book_path(@book) %>
-<%= link_to "Delete", book_path(@book), method: :delete, data: { confirm:" Are you positive?" } %>
 
-<%# This is a comment: These display the title, author, and description in a list. %>
-<%# This is a comment: method: :delete refers to the delete route.%>
+
+<%# Outer if statement %>
+
+<% if user_signed_in?%>
+
+  <% if @book.user_id == current_user.id %>
+
+  <%= link_to "Edit", edit_book_path(@book) %>
+  <%= link_to "Delete", book_path(@book), method: :delete, data: { confirm:" Are you positive?" } %>
+
+  <%end %>
+<% end %>
+
+
+
+<%#Comments%>
+
+<%# These display the title, author, and description in a list. %>
+
+<%# method: :delete refers to the delete route.%>
+
+
+<%# If statements below prevent a random user from deleting a book a user submitted %>
+
+<%# The inner if else user_signed_in? statement says if the book's user id is equal to to the current id then make the links appear. %>
+
+<%# The outer if else statement says if the book's user id is equal to to the current id then make the links appear. %>

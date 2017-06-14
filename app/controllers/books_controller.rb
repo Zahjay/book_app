@@ -4,8 +4,12 @@ class BooksController < ApplicationController
 before_action :find_book, only: [:show, :edit, :update,:destroy]
 
 def index 
-  # this shows the book in descending order  
-  @books = Book.all.order(created_at: :desc)
+  # this shows the book in descending order
+  if current_user
+    @books = current_user.books.order(created_at: :desc)
+  else
+    @books = Book.all
+  end
 end
 
 
@@ -17,12 +21,14 @@ end
 def new 
   # Generating books from user
   @book = current_user.books.build
+  @categories = Category.all
+  # Accesses models 
+  # @categories = Category.all.map{|c|, [c.name, c.id]}
 end
 
 def create 
   # This is used instead of Book.new
   @book = current_user.books.build(book_params)
-
   if @book.save
     redirect_to root_path
   else
@@ -39,9 +45,9 @@ def update
   if @book.update(book_params)
     redirect_to book_path(@book)
   else
-    render 'edit'
-    end   
+    render 'edit'  
   end
+end
 
 def destroy
   @book.destroy 
@@ -50,13 +56,15 @@ end
 
 private
 
-def book_params
-    params.require(:book).permit(:title, :description, :author)
-end
+  def book_params
+      params.require(:book).permit(:title, :description, :author, :category_id)
+  end
 
-# function for show
-def find_book
-  # this allows you to find a book through the book_id
-  @book = Book.find(params[:id])
+  # function for show
+  def find_book
+    # this allows you to find a book through the book_id
+    @book = Book.find(params[:id])
   end
 end
+
+
