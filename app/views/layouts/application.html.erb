@@ -9,6 +9,28 @@
   </head>
 
   <body>
+    <nav class="navbar navbar-default">
+
+      <div class="container">
+
+        <div class=" navbar-header">
+          <%= link_to "Z Reads", root_path, class: "navbar-brand" %>
+        </div>
+
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Create Account", new_user_registration_path%></li>
+           
+          </ul>
+
+      </div>
+
+
+    </nav>
+    
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <%= yield %>
+    
   </body>
 </html>
