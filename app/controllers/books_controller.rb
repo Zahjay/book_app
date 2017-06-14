@@ -5,6 +5,7 @@ before_action :find_book, only: [:show, :edit, :update,:destroy]
 
 def index 
   # this shows the book in descending order
+  #if the current user is is signed in then show books else if they aren't show all of the books.
   if current_user
     @books = current_user.books.order(created_at: :desc)
   else
