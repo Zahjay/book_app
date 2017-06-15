@@ -1,5 +1,14 @@
+
+<h1 class="current-category"><%= params[:category]%></h1>
+
+<%if @books.count == 0 %>
+  <h1> This category is currently empty.</h1>
+ <% else %>
+
 <% @books.each do |book| %>
   <h2><%= link_to book.title, book_path(book) %></h2>
+<% end %>
+
 <% end %>
 
 
@@ -8,3 +17,5 @@
 <%# this link was on the index page now it's not link_to "Add Book", new_book_path %>
 
 <%# This is a comment: the link directly above adds a button to the index page. %>
+
+<%# This is a comment: the if else statement wrapped around the h1 comes up if the user does not possess books in that category.If they do then they will display. %>
