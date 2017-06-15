@@ -6,10 +6,11 @@ before_action :find_book, only: [:show, :edit, :update,:destroy]
 def index 
   # this shows the book in descending order
   #if the current user is is signed in then show books else if they aren't show all of the books.
-  if current_user
-    @books = current_user.books.order(created_at: :desc)
+  if params[:category].blank?
+    @books = Book.all.order(created_at: :desc)
   else
-    @books = Book.all
+    category_id = Category.find_by(name: params[:category]).id
+    @books = Book.where(:category_id => category_id).order(created_at: :desc)
   end
 end
 
