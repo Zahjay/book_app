@@ -38,7 +38,8 @@ def create
 end
 
 def edit
-
+  #this gives drop down properties to edit 
+ @categories = Category.all
 end
 
 def update
