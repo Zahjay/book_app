@@ -1,28 +1,59 @@
-# ZReads
+# Z-Readz
 
-# User Story
-#### As a user, I want to be able to see if a book is a good read, as well as save books that I want to read in the future.
+## What is Z-Readz?
+
+### Z-Readz is a simple web application built for the voracious reader who wants a web app that is strictly designed to keep a book lover happy. It gives them an  easy way to explore differnt categories of books, create a user account, and to keep track of books that they have read and want to read. We believe that by giving voracious readeres the option to access a site that is tailored toward them, we will achieve a high rate of user interaction. 
 
 
-- When I'm on the index/home screen,
-- And I'm not logged in with ZReads,
-- Then I see the 'Create Account', 'Login In' buttons,
-- And I press the 'Login In' button,
-- And I login with my ZReads credentials,
-- Then I'm back on the home screen, and the app shows that I'm logged in.
+## General Approach 
+### To begin this project I came up with wireframes and tables in order to have an end goal to work towards. Since I am doing a fullstack application achieving Crud fuctionality first was the main goal. (Styling-Bootstraps-Sass) was worked on in segments throughout the entire project. During the initial stages of this project making list helped me to stay organized and daily checkins with  instructional staff kept me on track. 
 
 
 # Tech Stack Used Ruby on Rails 
 
-## Type of App| FullStack 
+## Type of App| FullStack Ruby On Rails 
 
 
-#Wireframes
+# Wireframes
 
 
-## Various Gems
-#### devise
-#### bootstrap-sass
+
+## Wireframs for Tables 
+
+
+
+###Book 
+
+
+
+
+## User
+
+
+
+##Category
+
+
+
+## Technologies Used / Dependencies:
+### Various Gems / Resources
+
+- gem 'devise', '~> 4.3'
+- gem 'paperclip', '~> 5.0.0'
+- gem 'simple_form', '~> 3.5'
+- gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+-  realtimeboard for wireframes 
+
+
+
+
+## Direction for Future Growth/ Future Stages of Development 
+
+- Add a section where users can differenciate the books that they have read, want to read, and don't want to read.
+
+- Work with pulling the info from an API
+
+- Work more with Bootstrap-Sass
 
 
 
