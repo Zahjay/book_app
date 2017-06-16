@@ -19,7 +19,7 @@
       <div class="container">
 
         <div class=" navbar-header">
-          <%= link_to "Z Reads", root_path, class: "navbar-brand" %>
+          <%= link_to "Z-Readz", root_path, class: "navbar-brand" %>
         </div>
 
           <ul class="nav navbar-nav">
@@ -32,7 +32,6 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right"> 
-
 
             
           <li class="dropdown">
@@ -57,11 +56,14 @@
 
 
     </nav>
-    
+ 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
+  <div class="container" >
     <%= yield %>
-    
+  </div>
+
+  
   </body>
 </html>
