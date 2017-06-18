@@ -8,15 +8,12 @@
 ## General Approach 
 ### To begin this project I came up with wireframes and tables in order to have an end goal to work towards. Since I am doing a fullstack crud application, achieving crud fuctionality first was the main goal. (Styling - Bootstraps-Sass) was worked on in segments throughout the entire project. During the initial stages of this project making lists helped me to stay organized, and daily checkins with instructional staff kept me on track. 
 
-<<<<<<< HEAD
 
 ## Tech Stack Used Ruby on Rails 
 
 ### Type of App => FullStack Ruby On Rails 
 
 
-=======
->>>>>>> 235da8b9f5919218e89d9c6b007d94f5e629bacf
 # Wireframes
 
 ## Wireframs for Tables 
