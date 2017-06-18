@@ -8,32 +8,39 @@
 ## General Approach 
 ### To begin this project I came up with wireframes and tables in order to have an end goal to work towards. Since I am doing a fullstack crud application, achieving crud fuctionality first was the main goal. (Styling - Bootstraps-Sass) was worked on in segments throughout the entire project. During the initial stages of this project making lists helped me to stay organized, and daily checkins with instructional staff kept me on track. 
 
+<<<<<<< HEAD
 
 ## Tech Stack Used Ruby on Rails 
 
 ### Type of App => FullStack Ruby On Rails 
 
 
+=======
+>>>>>>> 235da8b9f5919218e89d9c6b007d94f5e629bacf
 # Wireframes
-
-
 
 ## Wireframs for Tables 
 
 
+##### Below is the Book table it contains six different categories three of which were added once the table was built.
 
-###Book 
-
-
-
+![img_3271](https://git.generalassemb.ly/storage/user/5655/files/d660f0be-539b-11e7-8e3e-24c2fdb6f4cf)
 
 ## User
+##### Below is the user table it connects to the book table via the user_id.
 
 
+![img_3266](https://git.generalassemb.ly/storage/user/5655/files/b8081d8a-539c-11e7-90c7-ca7127a0c56d)
 
-##Category
+
+## Category
+
+Below is the category table it connects to the book table via the category_id.
+
+![img_3265](https://git.generalassemb.ly/storage/user/5655/files/5ad9cc5e-539b-11e7-8769-c5b93f02a8b1)
 
 
+## Tech Stack Used Ruby on Rails => Type of App => FullStack Ruby On Rails 
 
 ## Technologies Used / Dependencies:
 ### Various Gems / Resources
@@ -43,7 +50,6 @@
 - gem 'simple_form', '~> 3.5'
 - gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 -  realtimeboard for wireframes 
-
 
 
 
