@@ -21,11 +21,9 @@
 ## Wireframs for Tables 
 
 
+##### Below is the Book table it contains six different categories three of which were added once the table was built.
 
-###Book 
-
-
-
+![img_3271](https://git.generalassemb.ly/storage/user/5655/files/d660f0be-539b-11e7-8e3e-24c2fdb6f4cf)
 
 ## User
 
