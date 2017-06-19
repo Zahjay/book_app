@@ -17,7 +17,7 @@
 
 # Wireframes
 
-## Home Page 
+## Home Page When Not Logged In
 
 <img width="833" alt="screen shot 2017-06-19 at 10 54 00 am" src="https://git.generalassemb.ly/storage/user/5655/files/a3cc8030-54dd-11e7-9e6f-36926421351c">
 
