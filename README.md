@@ -1,4 +1,5 @@
 # Z-Readz
+<img width="1267" alt="screen shot 2017-06-18 at 11 56 57 am" src="https://git.generalassemb.ly/storage/user/5655/files/6069858a-54cf-11e7-83d7-3ebef0780990">
 
 ## What is Z-Readz?
 
