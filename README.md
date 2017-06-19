@@ -47,6 +47,8 @@ Below is the category table it connects to the book table via the category_id.
 - gem 'simple_form', '~> 3.5'
 - gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 -  realtimeboard for wireframes 
+-  I read a lot of different blog post and documentation on making auth work with rails this definitely helped to see how consditional styling works. 
+
 
 
 
@@ -62,5 +64,5 @@ Below is the category table it connects to the book table via the category_id.
 
 - Adding a section where users can upload there photos.
 
-- 
+
 
